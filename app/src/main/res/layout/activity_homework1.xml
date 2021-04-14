@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeworkActivity1">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Info"
+        android:textSize="64sp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="name, amount, description, id, price"/>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="16sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintLeft_toRightOf="@id/barier"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: "
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/name_text"
+        app:layout_constraintLeft_toLeftOf="@id/name"/>
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/name_text"
+        app:layout_constraintTop_toTopOf="@id/description"
+        app:layout_constraintLeft_toLeftOf="@id/name_text"
+        />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id: "
+        android:textSize="16sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/description_text"
+        app:layout_constraintLeft_toLeftOf="@id/name"/>
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/name_text"
+        app:layout_constraintTop_toTopOf="@id/id"
+        app:layout_constraintLeft_toLeftOf="@id/name_text"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textSize="16sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/id_text"
+        app:layout_constraintLeft_toLeftOf="@id/name"/>
+
+    <TextView
+        android:id="@+id/price_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/name_text"
+        app:layout_constraintTop_toTopOf="@id/price"
+        app:layout_constraintLeft_toLeftOf="@id/name_text"
+        />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount Amount: "
+        android:textSize="16sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/price_text"
+        app:layout_constraintLeft_toLeftOf="@id/name"/>
+
+    <TextView
+        android:id="@+id/amount_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="@id/name_text"
+        app:layout_constraintTop_toTopOf="@id/amount"
+        app:layout_constraintLeft_toLeftOf="@id/name_text"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
